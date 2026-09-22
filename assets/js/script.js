@@ -20,7 +20,19 @@ const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
 // sidebar toggle functionality for mobile
-sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
+// uses the real content height so nothing gets clipped (font size, zoom, wrapping)
+const fitSidebarHeight = function () {
+  sidebar.style.maxHeight = sidebar.classList.contains("active")
+    ? sidebar.scrollHeight + (sidebar.offsetHeight - sidebar.clientHeight) + "px"
+    : "";
+}
+
+sidebarBtn.addEventListener("click", function () {
+  elementToggleFunc(sidebar);
+  fitSidebarHeight();
+});
+
+window.addEventListener("resize", fitSidebarHeight);
 
 
 

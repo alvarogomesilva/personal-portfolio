@@ -467,7 +467,7 @@ main {
   transition: var(--transition-2);
 }
 
-.sidebar.active { max-height: 405px; }
+.sidebar.active { max-height: 600px; }
 
 .sidebar-info {
   position: relative;
@@ -1483,7 +1483,7 @@ main {
     margin-bottom: 30px;
   }
 
-  .sidebar.active { max-height: 584px; }
+  .sidebar.active { max-height: 700px; }
 
   .sidebar-info { gap: 25px; }
 
@@ -1901,7 +1901,8 @@ main {
    * SIDEBAR
    */
 
-  .sidebar {
+  .sidebar,
+  .sidebar.active {
     position: sticky;
     top: 60px;
     max-height: max-content;
