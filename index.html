@@ -5,12 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alvaro | Personal Portifolio</title>
+  <title>Alvaro Henrique | Backend Developer</title>
+  <meta name="description" content="Portfólio de Alvaro Henrique, desenvolvedor backend com Node.js, NestJS e TypeScript.">
+  <meta name="theme-color" content="#0d1117">
   <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
 </head>
@@ -37,7 +39,9 @@
         <div class="info-content">
           <h1 class="name" title="Alvaro Henrique">Alvaro Henrique</h1>
 
-          <p class="title">Software Developer</p>
+          <p class="title"><span class="tag-bracket">&lt;</span>Software Developer<span class="tag-bracket"> /&gt;</span></p>
+
+          <p class="status"><span class="status-dot"></span>Aberto a oportunidades</p>
 
         </div>
 
@@ -64,7 +68,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="alvaroindaial15@gmail.com" class="contact-link">alvaroindaial15@gmail.com</a>
+              <a href="mailto:alvaroindaial15@gmail.com" class="contact-link">alvaroindaial15@gmail.com</a>
             </div>
 
           </li>
@@ -78,7 +82,7 @@
             <div class="contact-info">
               <p class="contact-title">Telefone</p>
 
-              <a href="tel:+12133522795" class="contact-link">+55 (47) 9 8471-6675</a>
+              <a href="tel:+5547984716675" class="contact-link">+55 (47) 9 8471-6675</a>
             </div>
 
           </li>
@@ -92,7 +96,7 @@
             <div class="contact-info">
               <p class="contact-title">Nascimento</p>
 
-              <time datetime="1982-06-23">Março 30, 2002</time>
+              <time datetime="2002-03-30">30 de março de 2002</time>
             </div>
 
           </li>
@@ -106,7 +110,7 @@
             <div class="contact-info">
               <p class="contact-title">Localização</p>
 
-              <address>Indaial, Santa Catarina, BRAZIL</address>
+              <address>Indaial, Santa Catarina, Brasil</address>
             </div>
 
           </li>
@@ -118,13 +122,13 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="https://www.linkedin.com/in/alvarogomessilva/" target="_blank" class="social-link">
+            <a href="https://www.linkedin.com/in/alvarogomessilva/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://github.com/alvarogomesilva" target="_blank" class="social-link">
+            <a href="https://github.com/alvarogomesilva" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
@@ -149,19 +153,15 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>Sobre</button>
+            <button class="navbar-link active" data-nav-link="sobre">Sobre</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resumo</button>
+            <button class="navbar-link" data-nav-link="resumo">Resumo</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Projetos</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contato</button>
+            <button class="navbar-link" data-nav-link="projetos">Projetos</button>
           </li>
 
         </ul>
@@ -192,105 +192,59 @@
           </p>
         </section>
 
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">O que estudo?</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
-                  width="40" 
-                />
-          
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Node Js</h4>
-
-                <p class="service-item-text">
-                  Node.js é um runtime JavaScript assíncrono e eficiente, usado para criar APIs e apps escaláveis no servidor.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                
-                
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg" 
-                width="40"
-            />
-          
-          
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Nest JS</h4>
-
-                <p class="service-item-text">
-                  NestJS é um framework Node.js progressivo, baseado em TypeScript, que usa arquitetura modular para criar APIs escaláveis e eficientes.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                
-             
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-                width="40"
-            />
-          
-          
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">TypeScript</h4>
-
-                <p class="service-item-text">
-                  TypeScript é um superset do JavaScript que adiciona tipagem estática, tornando o código mais seguro e escalável.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" 
-                   width="40"
-              />
-          
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">React</h4>
-
-                <p class="service-item-text">
-                  React é uma biblioteca JavaScript para construir interfaces de usuário. Em portfólios, permite criar componentes reutilizáveis, tornando o desenvolvimento mais eficiente e a experiência do usuário mais fluida.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
+        <section class="code-card" aria-label="Resumo em código">
+          <div class="code-card-bar">
+            <span class="code-dot"></span><span class="code-dot"></span><span class="code-dot"></span>
+            <span class="code-file">alvaro.ts</span>
+          </div>
+<pre class="code-body"><code><span class="tk-key">const</span> <span class="tk-var">alvaro</span> <span class="tk-op">=</span> {
+  <span class="tk-prop">role</span>: <span class="tk-str">"Backend Developer"</span>,
+  <span class="tk-prop">stack</span>: [<span class="tk-str">"Node.js"</span>, <span class="tk-str">"NestJS"</span>, <span class="tk-str">"TypeScript"</span>],
+  <span class="tk-prop">studying</span>: [<span class="tk-str">"SOLID"</span>, <span class="tk-str">"Clean Architecture"</span>, <span class="tk-str">"REST APIs"</span>],
+  <span class="tk-prop">location</span>: <span class="tk-str">"Indaial, SC"</span>,
+  <span class="tk-prop">openToWork</span>: <span class="tk-bool">true</span>,
+};</code></pre>
         </section>
 
+
+
+        <section class="stack">
+          <h3 class="h3 stack-title">Tecnologias</h3>
+          <ul class="stack-list">
+            <li class="stack-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="40" height="40" alt="" loading="lazy">
+              <span>JavaScript</span>
+            </li>
+            <li class="stack-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="40" height="40" alt="" loading="lazy">
+              <span>TypeScript</span>
+            </li>
+            <li class="stack-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" width="40" height="40" alt="" loading="lazy">
+              <span>Node.js</span>
+            </li>
+            <li class="stack-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg" width="40" height="40" alt="" loading="lazy">
+              <span>NestJS</span>
+            </li>
+            <li class="stack-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="40" height="40" alt="" loading="lazy">
+              <span>React</span>
+            </li>
+            <li class="stack-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="40" height="40" alt="" loading="lazy">
+              <span>React Native</span>
+            </li>
+            <li class="stack-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" width="40" height="40" alt="" loading="lazy">
+              <span>PHP</span>
+            </li>
+            <li class="stack-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" width="40" height="40" alt="" loading="lazy">
+              <span>SQL</span>
+            </li>
+          </ul>
+        </section>
 
         <!--
           - testimonials
@@ -375,7 +329,7 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="briefcase-outline"></ion-icon>
             </div>
 
             <h3 class="h3">Experiência</h3>
@@ -472,14 +426,14 @@
           <ul class="project-list">
 
             <li class="project-item  active" data-filter-item data-category="web">
-              <a href="https://alvarogomesilva.github.io/project-page-login/" target="_blank">
+              <a href="https://alvarogomesilva.github.io/project-page-login/" target="_blank" rel="noopener">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.png" alt="Travel" loading="lazy">
+                  <img src="./assets/images/project-1.png" alt="Tela de login" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Login</h3>
@@ -488,14 +442,14 @@
               </a>
             </li>
             <li class="project-item  active" data-filter-item data-category="web">
-              <a href="https://alvarogomesilva.github.io/responsive-travel-website/" target="_blank">
+              <a href="https://alvarogomesilva.github.io/responsive-travel-website/" target="_blank" rel="noopener">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-10.png" alt="Travel" loading="lazy">
+                  <img src="./assets/images/project-10.png" alt="Site de viagens Travel" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Travel</h3>
@@ -505,14 +459,14 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web">
-              <a href="https://alvarogomesilva.github.io/landing-page-soup/" target="_blank">
+              <a href="https://alvarogomesilva.github.io/landing-page-soup/" target="_blank" rel="noopener">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-3.png" alt="Travel" loading="lazy">
+                  <img src="./assets/images/project-3.png" alt="Landing page de sopas" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Sopas</h3>
@@ -522,14 +476,14 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="mobile">
-              <a href="https://github.com/alvarogomesilva/app_gastos" target="_blank">
+              <a href="https://github.com/alvarogomesilva/app_gastos" target="_blank" rel="noopener">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-4.png" alt="task manager" loading="lazy">
+                  <img src="./assets/images/project-4.png" alt="App de controle de gastos" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Controle de gastos pessoais</h3>
@@ -540,14 +494,14 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="mobile">
-              <a href="https://github.com/alvarogomesilva/app_cuideBem" target="_blank">
+              <a href="https://github.com/alvarogomesilva/app_cuideBem" target="_blank" rel="noopener">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-5.png" alt="brawlhalla" loading="lazy">
+                  <img src="./assets/images/project-5.png" alt="App Cuide Bem" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Cuide Bem</h3>
@@ -564,54 +518,9 @@
 
       </article>
 
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contato">
-
-        <header>
-          <h2 class="h2 article-title">Contato</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.9923467433073!2d-49.22554932527713!3d-26.90373799282756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df02e9fe97fecf%3A0xeafc38a347cb9d14!2sR.%20Para%C3%ADba%20-%20Estados%2C%20Indaial%20-%20SC%2C%2089130-000!5e0!3m2!1spt-PT!2sbr!4v1708992444722!5m2!1spt-PT!2sbr"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Envie uma mensagem</h3>
-
-          <form action="#" class="form" data-form id="form">
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Seu nome" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Sua Mensagem" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane" id="paper-plane"></ion-icon>
-              <span id="message">Enviar mensagem</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
     </div>
 
   </main>
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
   <!--
     - custom js link
   -->
